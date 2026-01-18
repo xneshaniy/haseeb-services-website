@@ -33,11 +33,10 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
             ? 'bg-primary/95 backdrop-blur-md shadow-lg py-3'
-            : 'bg-primary py-4 shadow-md'
-        }`}
+            : 'bg-transparent py-4'
+          }`}
       >
         <div className="container">
           <div className="flex justify-between items-center">
@@ -57,9 +56,8 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative text-white font-medium transition-colors hover:text-accent ${
-                    pathname === link.href ? 'text-accent' : ''
-                  }`}
+                  className={`relative text-white font-medium transition-colors hover:text-accent ${pathname === link.href ? 'text-accent' : ''
+                    }`}
                 >
                   {link.label}
                   {pathname === link.href && (
@@ -88,9 +86,8 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <nav
-        className={`fixed top-0 right-0 h-full w-72 bg-primary z-[70] p-8 transition-transform duration-300 md:hidden ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed top-0 right-0 h-full w-72 bg-primary z-[70] p-8 transition-transform duration-300 md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <ul className="flex flex-col gap-6 mt-16">
           {navLinks.map((link) => (
@@ -98,9 +95,8 @@ export default function Header() {
               <Link
                 href={link.href}
                 onClick={closeMenu}
-                className={`text-white text-lg font-medium block py-3 border-b border-white/10 hover:text-accent transition-colors ${
-                  pathname === link.href ? 'text-accent' : ''
-                }`}
+                className={`text-white text-lg font-medium block py-3 border-b border-white/10 hover:text-accent transition-colors ${pathname === link.href ? 'text-accent' : ''
+                  }`}
               >
                 {link.label}
               </Link>
