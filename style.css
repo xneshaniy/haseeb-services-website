@@ -193,12 +193,17 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: var(--accent);
   font-weight: 500;
   transition: color 0.3s ease;
   text-decoration: none;
   position: relative;
   padding: var(--space-xs) 0;
+}
+
+nav a:hover,
+nav a.active {
+  color: white;
 }
 
 nav a::after {
@@ -219,7 +224,7 @@ nav a.active::after {
 
 nav a:hover,
 nav a.active {
-  color: var(--accent);
+  color: white;
 }
 
 /* Mobile Menu Overlay */
@@ -269,10 +274,16 @@ nav a.active {
 }
 
 .mobile-menu a {
+  color: var(--accent);
   font-size: 1.1rem;
   width: 100%;
   padding: var(--space-sm);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  color: white;
 }
 
 /* Button Classes */

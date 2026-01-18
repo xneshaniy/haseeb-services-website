@@ -34,8 +34,8 @@ export default function Header() {
     <>
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
-            ? 'bg-primary/95 backdrop-blur-md shadow-lg py-3'
-            : 'bg-transparent py-4'
+          ? 'bg-primary/95 backdrop-blur-md shadow-lg py-3'
+          : 'bg-transparent py-4'
           }`}
       >
         <div className="container">
@@ -56,7 +56,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative text-white font-medium transition-colors hover:text-accent ${pathname === link.href ? 'text-accent' : ''
+                  className={`relative text-accent font-medium transition-colors hover:text-white ${pathname === link.href ? 'underline' : ''
                     }`}
                 >
                   {link.label}
@@ -95,7 +95,7 @@ export default function Header() {
               <Link
                 href={link.href}
                 onClick={closeMenu}
-                className={`text-white text-lg font-medium block py-3 border-b border-white/10 hover:text-accent transition-colors ${pathname === link.href ? 'text-accent' : ''
+                className={`text-accent text-lg font-medium block py-3 border-b border-white/10 hover:text-white transition-colors ${pathname === link.href ? 'font-bold' : ''
                   }`}
               >
                 {link.label}
