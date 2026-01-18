@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Growth Leder</title>
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><img src="public/logo-white.svg" alt="Growth Leder Logo">Growth Leder</a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="cta-btn">Book Free Call</a>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay"></div>
+  <nav class="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="reveal">Get In Touch</h1>
+      <p class="reveal">Book your free 15-minute consultation call – no obligation, just honest advice.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="reveal">Schedule Your Free Strategy Call</h2>
+      <p class="reveal" style="font-size:1.2rem; max-width:700px; margin:0 auto 2rem;">Fill out the form below and we'll
+        get back to you within 24 hours.</p>
+      <form action="https://formspree.io/f/mojjqgpw" method="POST">
+        <div class="form-group">
+          <label for="name">Your Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required />
+        </div>
+        <div class="form-group">
+          <label for="service">Select a Service *</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service...</option>
+            <option value="lead-generation">Lead Generation</option>
+            <option value="admin-support">Admin Support</option>
+            <option value="virtual-assistance">General Virtual Assistance</option>
+            <option value="outreach">Outreach (Cold Email + LinkedIn)</option>
+            <option value="social-media">Social Media Management & Ads</option>
+            <option value="crm-management">CRM Management</option>
+            <option value="automation">Automation & Workflows</option>
+            <option value="accounting">Accounting & Bookkeeping</option>
+            <option value="other">Other / Multiple Services</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about your project, goals, or questions *</label>
+          <textarea id="message" name="message"
+            placeholder="Describe your needs, timeline, and any specific requirements..." rows="6" required></textarea>
+        </div>
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p style="margin-bottom: 1rem; font-size: 1.1rem; font-weight: 600;">Or contact us directly:</p>
+        <div class="contact-info-item">
+          <span>📧</span>
+          <a href="mailto:admin@growthleder.com">admin@growthleder.com</a>
+        </div>
+        <div class="contact-info-item">
+          <span>📞</span>
+          <a href="tel:+923137123964">+92 313 7123964</a>
+        </div>
+        <div class="contact-info-item">
+          <span>💬</span>
+          <a href="https://wa.me/923137123964" target="_blank">WhatsApp: +92 313 7123964</a>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/growthleder" target="_blank" aria-label="Instagram">📷</a>
+        <a href="https://twitter.com/growthleder" target="_blank" aria-label="Twitter">🐦</a>
+        <a href="https://facebook.com/growthleder" target="_blank" aria-label="Facebook">👤</a>
+        <a href="https://linkedin.com/company/growthleder" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="https://youtube.com/@growthleder" target="_blank" aria-label="YouTube">▶️</a>
+        <a href="https://tiktok.com/@growthleder" target="_blank" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+  </section>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Growth Leder. All rights reserved.</p>
+      <p>Accounting • Lead Generation • SEO • LinkedIn & Web Outreach</p>
+      <div class="legal-links" style="margin: 1rem 0; font-size: 0.9rem;">
+        <a href="privacy.html" style="color: rgba(255,255,255,0.7); margin: 0 10px;">Privacy Policy</a> •
+        <a href="terms.html" style="color: rgba(255,255,255,0.7); margin: 0 10px;">Terms of Service</a>
+      </div>
+      <div class="contact-info" style="margin-top: 1.5rem;">
+        <p style="margin-bottom: 0.5rem;">📧 <a href="mailto:admin@growthleder.com">admin@growthleder.com</a></p>
+        <p style="margin-bottom: 0.5rem;">📞 <a href="tel:+923137123964">+92 313 7123964</a></p>
+        <p style="margin-bottom: 1rem;">💬 <a href="https://wa.me/923137123964" target="_blank">WhatsApp: +92 313
+            7123964</a></p>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/growthleder" target="_blank" aria-label="Instagram">📷</a>
+        <a href="https://twitter.com/growthleder" target="_blank" aria-label="Twitter">🐦</a>
+        <a href="https://facebook.com/growthleder" target="_blank" aria-label="Facebook">👤</a>
+        <a href="https://linkedin.com/company/growthleder" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="https://youtube.com/@growthleder" target="_blank" aria-label="YouTube">▶️</a>
+        <a href="https://tiktok.com/@growthleder" target="_blank" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

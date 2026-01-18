@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Detail | Growth Leder</title>
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="carousel.css" />
+  <script src="js/data.js" defer></script>
+  <script src="js/service-detail.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><img src="public/logo-white.svg" alt="Growth Leder Logo">Growth Leder</a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="cta-btn">Book Free Call</a>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay"></div>
+  <nav class="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero hero--small">
+    <div class="container">
+      <div class="breadcrumbs"></div>
+      <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; backdrop-filter: blur(10px);" class="service-hero-icon"></div>
+      <h1 class="text-white service-title" style="color: white; margin-bottom: 1.5rem;"></h1>
+      <p class="text-lg service-short-desc" style="font-size: 1.1rem; max-width: 900px; margin: 0 auto; opacity: 0.95; color: white;"></p>
+    </div>
+  </section>
+
+  <!-- Service Details -->
+  <section style="padding: 5rem 0;">
+    <div class="container">
+      <div style="max-width: 1000px; margin: 0 auto;">
+        <h2 style="margin-bottom: 1.5rem;">About This Service</h2>
+        <p class="service-full-desc" style="font-size: 1.1rem; color: var(--dark); line-height: 1.7; margin-bottom: 2rem;"></p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+          <div>
+            <h3 style="margin-bottom: 1rem;">Key Features</h3>
+            <ul class="service-features" style="list-style: none; padding: 0; margin: 0;"></ul>
+          </div>
+          <div>
+            <h3 style="margin-bottom: 1rem;">Typical Work</h3>
+            <ul class="service-typical-work" style="list-style: none; padding: 0; margin: 0;"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample Project -->
+  <section style="background: var(--light); padding: 5rem 0;">
+    <div class="container">
+      <div style="max-width: 1000px; margin: 0 auto;">
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">Sample Project</h2>
+        <div style="background: white; border-radius: 0.75rem; box-shadow: 0 8px 24px rgba(0,0,0,0.12); overflow: hidden; transition: box-shadow 0.3s;">
+          <div style="position: relative; height: 400px; background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); display: flex; align-items: center; justify-content: center;">
+            <div style="text-align: center; color: white; padding: 2rem;">
+              <h3 class="sample-project-title" style="font-size: 2rem; margin-bottom: 1rem; color: white;"></h3>
+              <p class="sample-project-desc" style="font-size: 1.1rem; opacity: 0.9; color: white;"></p>
+            </div>
+          </div>
+          <div style="padding: 2rem;">
+            <h4 style="font-weight: 700; color: var(--primary); margin-bottom: 1rem;">Results Achieved:</h4>
+            <ul class="sample-project-results" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.75rem; list-style: none; padding: 0; margin: 0;"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="service-testimonials" style="padding: 5rem 0;"></section>
+
+  <!-- Related Services -->
+  <section style="background: var(--light); padding: 5rem 0;">
+    <div class="container">
+      <div class="related-services"></div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="reveal" style="color: white; margin-bottom: 1rem;">Ready to Get Started?</h2>
+      <p class="reveal service-cta-text" style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem; color: white;"></p>
+      <a href="contact.html" class="cta-btn reveal" style="font-size: 1.2rem; padding: 18px 50px; background: white; color: var(--secondary);">Get a Free Consultation</a>
+    </div>
+  </section>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Growth Leder. All rights reserved.</p>
+      <p style="margin: 0.5rem 0;">Accounting • Lead Generation • SEO • LinkedIn & Web Outreach</p>
+      <div class="legal-links" style="margin: 1rem 0; font-size: 0.9rem;">
+        <a href="privacy.html" style="color: rgba(255,255,255,0.7); margin: 0 10px;">Privacy Policy</a> •
+        <a href="terms.html" style="color: rgba(255,255,255,0.7); margin: 0 10px;">Terms of Service</a>
+      </div>
+      <div class="contact-info" style="margin-top: 1.5rem;">
+        <div class="contact-info-item">
+          <span>📧</span>
+          <a href="mailto:admin@growthleder.com">admin@growthleder.com</a>
+        </div>
+        <div class="contact-info-item">
+          <span>📞</span>
+          <a href="tel:+923137123964">+92 313 7123964</a>
+        </div>
+        <div class="contact-info-item">
+          <span>💬</span>
+          <a href="https://wa.me/923137123964" target="_blank">WhatsApp: +92 313 7123964</a>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/growthleder" target="_blank" aria-label="Instagram">📷</a>
+        <a href="https://twitter.com/growthleder" target="_blank" aria-label="Twitter">🐦</a>
+        <a href="https://facebook.com/growthleder" target="_blank" aria-label="Facebook">👤</a>
+        <a href="https://linkedin.com/company/growthleder" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="https://youtube.com/@growthleder" target="_blank" aria-label="YouTube">▶️</a>
+        <a href="https://tiktok.com/@growthleder" target="_blank" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
