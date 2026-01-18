@@ -38,7 +38,7 @@ export const services: Service[] = [
     sampleProject: {
       title: 'B2B SaaS Lead Generation Campaign',
       description: 'Generated 500+ qualified leads for a SaaS company targeting mid-market businesses in the technology sector.',
-      image: '/projects/lead-generation-project.jpg', // Add project image at /public/projects/lead-generation-project.jpg
+      image: '/projects/lead-gen.png',
       results: [
         '500+ qualified leads delivered over 3 months',
         '35% conversion rate from lead to demo',
@@ -70,7 +70,7 @@ export const services: Service[] = [
     sampleProject: {
       title: 'Executive Admin Support Package',
       description: 'Provided comprehensive administrative support for a busy executive team, managing calendars, emails, and documentation.',
-      image: '/projects/admin-support-project.jpg', // Add project image at /public/projects/admin-support-project.jpg
+      image: '/projects/admin.png',
       results: [
         '20+ hours saved per week for executive team',
         '100% email response rate within 2 hours',
@@ -102,7 +102,7 @@ export const services: Service[] = [
     sampleProject: {
       title: 'Research & Operations Support',
       description: 'Provided comprehensive research and operational support for a growing consulting firm.',
-      image: '/projects/virtual-assistance-project.jpg', // Add project image at /public/projects/virtual-assistance-project.jpg
+      image: '/projects/va.png',
       results: [
         'Completed 50+ research projects in first quarter',
         'Reduced research time by 70% for consulting team',
@@ -134,7 +134,7 @@ export const services: Service[] = [
     sampleProject: {
       title: 'Multi-Channel Outreach Campaign',
       description: 'Launched integrated cold email and LinkedIn outreach campaign for a B2B service provider.',
-      image: '/projects/outreach-project.jpg', // Add project image at /public/projects/outreach-project.jpg
+      image: '/projects/outreach.png',
       results: [
         '25% email open rate (industry average: 18%)',
         '12% response rate with 8% conversion to meetings',
@@ -166,7 +166,7 @@ export const services: Service[] = [
     sampleProject: {
       title: 'Social Media Growth Campaign',
       description: 'Managed social media presence and ad campaigns for an e-commerce brand, significantly increasing engagement and sales.',
-      image: '/projects/social-media-project.jpg', // Add project image at /public/projects/social-media-project.jpg
+      image: '/projects/social.png',
       results: [
         '300% increase in social media followers',
         '250% increase in engagement rate',
@@ -198,7 +198,7 @@ export const services: Service[] = [
     sampleProject: {
       title: 'CRM Implementation & Automation',
       description: 'Implemented and configured HubSpot CRM for a growing SaaS company, including pipeline setup and workflow automation.',
-      image: '/projects/crm-project.jpg', // Add project image at /public/projects/crm-project.jpg
+      image: '/projects/crm.png',
       results: [
         'Complete CRM setup completed in 2 weeks',
         'Automated 15+ workflows saving 10+ hours/week',
@@ -230,7 +230,7 @@ export const services: Service[] = [
     sampleProject: {
       title: 'End-to-End Lead Automation System',
       description: 'Built comprehensive automation system connecting website forms, CRM, email, and calendar for seamless lead management.',
-      image: '/projects/automation-project.jpg', // Add project image at /public/projects/automation-project.jpg
+      image: '/projects/crm.png',
       results: [
         'Automated 20+ manual processes',
         'Reduced lead response time from 24 hours to 5 minutes',
@@ -263,7 +263,7 @@ export const services: Service[] = [
     sampleProject: {
       title: 'Complete Bookkeeping System Setup',
       description: 'Established comprehensive bookkeeping system for a growing e-commerce business, including accounts management and financial reporting.',
-      image: '/projects/accounting-project.jpg', // Add project image at /public/projects/accounting-project.jpg
+      image: '/projects/admin.png',
       results: [
         'Organized 12 months of backlogged transactions',
         'Reduced bookkeeping time by 80%',
