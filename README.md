@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Growth Leder - Services Website
 
 A modern, responsive website for Growth Leder services built with static HTML, CSS, and JavaScript.
@@ -74,3 +75,6 @@ Simply upload all files to your hosting provider.
 ## License
 
 © 2026 Growth Leder. All rights reserved.
+=======
+# haseeb-services-website
+>>>>>>> 2ffb04efacf2374be66d75b7b41579781f1c3a83
