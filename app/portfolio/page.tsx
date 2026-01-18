@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Portfolio | Growth Leder - Recent Clients & Completed Projects',
@@ -12,36 +13,42 @@ export default function Portfolio() {
       type: 'Lead Generation',
       title: 'Project Title',
       description: 'Short description of what we delivered and the result (e.g., leads booked, conversion rate, cost per lead).',
+      image: '/projects/lead-gen.png',
     },
     {
       client: 'NextGen Logistics',
       type: 'Outreach Services',
       title: 'Campaign Setup & Optimization',
       description: 'Describe targeting, messaging, follow-ups, and the results achieved.',
+      image: '/projects/outreach.png',
     },
     {
       client: 'Apex Growth Partners',
       type: 'CRM Management',
       title: 'Pipeline & Automation',
       description: 'CRM setup, pipeline stages, workflows, reporting, and team training details.',
+      image: '/projects/crm.png',
     },
     {
       client: 'MedCore Solutions',
       type: 'Admin Support',
       title: 'Operations & Documentation',
       description: 'Describe the tasks handled and time saved for the client.',
+      image: '/projects/admin.png',
     },
     {
       client: 'Summit Estate Group',
       type: 'Social Media + Ads',
       title: 'Content & Campaigns',
       description: 'Describe scheduling, engagement, ads, and measurable results.',
+      image: '/projects/social.png',
     },
     {
       client: 'TrustGuard Tech',
       type: 'Virtual Assistance',
       title: 'Research & Task Management',
       description: 'Describe the ongoing support scope and the impact on operations.',
+      image: '/projects/va.png',
     },
   ];
 
@@ -83,10 +90,19 @@ export default function Portfolio() {
                 key={index}
                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/5"
               >
-                <div className="h-56 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                  <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+                <div className="h-56 relative bg-gradient-to-br from-primary to-secondary flex items-center justify-center overflow-hidden">
+                  {item.image ? (
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-cover transition-transform duration-500 hover:scale-110"
+                    />
+                  ) : (
+                    <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  )}
                 </div>
                 <div className="p-6">
                   <span className="text-secondary font-semibold text-sm block mb-1">{item.client}</span>
