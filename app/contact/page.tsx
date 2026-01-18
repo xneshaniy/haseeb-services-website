@@ -44,7 +44,7 @@ export default function Contact() {
       });
 
       if (response.ok) {
-        setSubmitMessage('Thank you! Your message has been sent. We'll get back to you within 24 hours.');
+        setSubmitMessage("Thank you! Your message has been sent. We'll get back to you within 24 hours.");
         setFormData({ name: '', email: '', phone: '', service: '', message: '' });
       } else {
         throw new Error('Form submission failed');
