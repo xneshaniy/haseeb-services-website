@@ -25,7 +25,7 @@ export default function Testimonials({ testimonials, autoPlay = true, showAll = 
 
   useEffect(() => {
     if (!isAutoPlaying || showAll) return;
-    
+
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
@@ -70,7 +70,7 @@ export default function Testimonials({ testimonials, autoPlay = true, showAll = 
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/5"
+            className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-accent/30 hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm"
           >
             <div className="flex items-center gap-4 mb-4">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center overflow-hidden">
@@ -89,12 +89,12 @@ export default function Testimonials({ testimonials, autoPlay = true, showAll = 
                 )}
               </div>
               <div>
-                <h4 className="font-bold text-primary">{testimonial.clientName}</h4>
-                <p className="text-sm text-gray-600">{testimonial.serviceRendered}</p>
+                <h4 className="font-bold text-white">{testimonial.clientName}</h4>
+                <p className="text-sm text-slate-400">{testimonial.serviceRendered}</p>
               </div>
             </div>
             <div className="flex gap-1 mb-3">{renderStars(testimonial.rating)}</div>
-            <p className="text-dark mb-2 italic">&ldquo;{testimonial.reviewText}&rdquo;</p>
+            <p className="text-slate-200 mb-2 italic">&ldquo;{testimonial.reviewText}&rdquo;</p>
             <p className="text-sm text-secondary font-semibold">{testimonial.projectName}</p>
           </div>
         ))}
@@ -111,7 +111,7 @@ export default function Testimonials({ testimonials, autoPlay = true, showAll = 
         >
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="min-w-full px-4">
-              <div className="bg-white p-8 md:p-12 rounded-xl shadow-lg border border-primary/5 hover:shadow-xl transition-all duration-300">
+              <div className="bg-white/5 p-8 md:p-12 rounded-xl border border-white/10 hover:border-accent/30 transition-all duration-300 backdrop-blur-sm">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center overflow-hidden mb-6">
                     {testimonial.clientPhoto ? (
@@ -129,12 +129,12 @@ export default function Testimonials({ testimonials, autoPlay = true, showAll = 
                     )}
                   </div>
                   <div className="flex gap-1 mb-4">{renderStars(testimonial.rating)}</div>
-                  <p className="text-lg md:text-xl text-dark mb-6 italic max-w-2xl">
+                  <p className="text-lg md:text-xl text-slate-200 mb-6 italic max-w-2xl">
                     &ldquo;{testimonial.reviewText}&rdquo;
                   </p>
-                  <h4 className="font-bold text-primary text-xl mb-2">{testimonial.clientName}</h4>
+                  <h4 className="font-bold text-white text-xl mb-2">{testimonial.clientName}</h4>
                   <p className="text-secondary font-semibold mb-1">{testimonial.projectName}</p>
-                  <p className="text-sm text-gray-600">{testimonial.serviceRendered}</p>
+                  <p className="text-sm text-slate-400">{testimonial.serviceRendered}</p>
                 </div>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function Testimonials({ testimonials, autoPlay = true, showAll = 
         <>
           <button
             onClick={goToPrevious}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white rounded-full p-3 shadow-lg hover:bg-accent hover:text-white transition-all hover:scale-110 z-10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white/10 text-white rounded-full p-3 backdrop-blur-md border border-white/20 hover:bg-accent hover:border-accent transition-all hover:scale-110 z-10"
             aria-label="Previous testimonial"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,7 +156,7 @@ export default function Testimonials({ testimonials, autoPlay = true, showAll = 
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white rounded-full p-3 shadow-lg hover:bg-accent hover:text-white transition-all hover:scale-110 z-10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white/10 text-white rounded-full p-3 backdrop-blur-md border border-white/20 hover:bg-accent hover:border-accent transition-all hover:scale-110 z-10"
             aria-label="Next testimonial"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -173,11 +173,10 @@ export default function Testimonials({ testimonials, autoPlay = true, showAll = 
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`h-3 rounded-full transition-all ${
-                index === currentIndex
+              className={`h-3 rounded-full transition-all ${index === currentIndex
                   ? 'w-8 bg-accent'
-                  : 'w-3 bg-gray-300 hover:bg-gray-400'
-              }`}
+                  : 'w-3 bg-white/20 hover:bg-white/40'
+                }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />
           ))}

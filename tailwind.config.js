@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#001F3F',
+        primary: '#090a0f',
         secondary: '#28A745',
         accent: '#FD7E14',
-        light: '#F8F9FA',
-        dark: '#212529',
-        gray: '#6c757d',
+        light: '#f8f9fa',
+        dark: '#090a0f',
+        gray: '#a0aec0',
       },
       fontFamily: {
         heading: ['Poppins', 'sans-serif'],

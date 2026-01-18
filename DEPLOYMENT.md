@@ -36,11 +36,18 @@
 4. Build command: `npm run build`
 5. Publish directory: `.next`
 
-### Manual Deployment
+### StackCP / 20i (Static Hosting - Recommended)
+
+1. **Point Nameservers**: Ensure `growthleder.com` uses StackCP nameservers (e.g., `ns1.stackdns.com`).
+2. **Build Site**: Run `npm run build`. This generates an `out` folder.
+3. **Upload**: Use StackCP File Manager to upload **everything inside** the `out` folder to `public_html`.
+
+### Manual Node.js Hosting
 
 1. Run `npm run build`
-2. Upload the `.next` folder and all files to your hosting provider
-3. Ensure Node.js 18+ is available on your server
+2. Upload `.next`, `package.json`, and `public` to your server.
+3. Use StackCP's "Node.js" tool to start the app using `npm start`.
+4. Ensure Node.js 18+ is selected.
 
 ## Environment Variables
 

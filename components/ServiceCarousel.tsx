@@ -100,15 +100,15 @@ export default function ServiceCarousel() {
               key={index}
               className="min-w-full px-4"
             >
-              <div className="bg-white p-8 md:p-12 rounded-xl shadow-lg border border-primary/5 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div className="bg-white/5 p-8 md:p-12 rounded-xl border border-white/10 hover:border-accent/30 transition-all duration-300 backdrop-blur-sm">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center text-white mb-6 shadow-md hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center text-white mb-6 shadow-md hover:scale-110 transition-transform">
                     {service.icon}
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-lg text-dark max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -121,7 +121,7 @@ export default function ServiceCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={goToPrevious}
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white rounded-full p-3 shadow-lg hover:bg-accent hover:text-white transition-all hover:scale-110 z-10"
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white/10 text-white rounded-full p-3 backdrop-blur-md border border-white/20 hover:bg-accent hover:border-accent transition-all hover:scale-110 z-10"
         aria-label="Previous service"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -130,7 +130,7 @@ export default function ServiceCarousel() {
       </button>
       <button
         onClick={goToNext}
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white rounded-full p-3 shadow-lg hover:bg-accent hover:text-white transition-all hover:scale-110 z-10"
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white/10 text-white rounded-full p-3 backdrop-blur-md border border-white/20 hover:bg-accent hover:border-accent transition-all hover:scale-110 z-10"
         aria-label="Next service"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -145,8 +145,8 @@ export default function ServiceCarousel() {
             key={index}
             onClick={() => goToSlide(index)}
             className={`h-3 rounded-full transition-all ${index === currentIndex
-                ? 'w-8 bg-accent'
-                : 'w-3 bg-gray-300 hover:bg-gray-400'
+              ? 'w-8 bg-accent'
+              : 'w-3 bg-white/20 hover:bg-white/40'
               }`}
             aria-label={`Go to service ${index + 1}`}
           />

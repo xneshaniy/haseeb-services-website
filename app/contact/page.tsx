@@ -59,19 +59,25 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-[#003366] text-white text-center py-24 md:py-32 relative overflow-hidden">
+      <section className="text-white text-center py-24 md:py-32 relative overflow-hidden" style={{ background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)' }}>
+        <div className="stars-container">
+          <div className="stars"></div>
+          <div className="stars2"></div>
+          <div className="stars3"></div>
+        </div>
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 30% 50%, rgba(40, 167, 69, 0.1) 0%, transparent 50%)' }} />
         <div className="container relative z-10">
-          <h1 className="text-white mb-6">Get In Touch</h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-95">
+          <h1 className="text-white mb-6 uppercase tracking-wider">Get In Touch</h1>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-95 text-slate-200">
             Book your free 15-minute consultation call – no obligation, just honest advice.
           </p>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="bg-gradient-to-br from-secondary to-[#218838] text-white py-20 relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)' }} />
+      <section className="bg-primary py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary via-bg-darker to-primary opacity-50 pointer-events-none" />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 70% 30%, rgba(40, 167, 69, 0.05) 0%, transparent 50%)' }} />
         <div className="container relative z-10">
           <h2 className="text-white text-center mb-4">Schedule Your Free Strategy Call</h2>
           <p className="text-center text-xl max-w-2xl mx-auto mb-12">
@@ -80,7 +86,7 @@ export default function Contact() {
 
           <form
             onSubmit={handleSubmit}
-            className="max-w-2xl mx-auto bg-white/15 backdrop-blur-md p-8 rounded-xl border border-white/20"
+            className="max-w-2xl mx-auto bg-white/5 backdrop-blur-xl p-8 md:p-12 rounded-2xl border border-white/10 shadow-2xl"
           >
             <div className="mb-6">
               <label htmlFor="name" className="block mb-2 font-semibold">
@@ -140,17 +146,17 @@ export default function Contact() {
                 required
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border-2 border-white/30 bg-white text-dark focus:outline-none focus:border-accent focus:ring-4 focus:ring-accent/15 transition-all"
+                className="w-full px-4 py-4 rounded-xl border border-white/10 bg-white/5 text-white focus:outline-none focus:border-accent focus:ring-4 focus:ring-accent/15 transition-all"
               >
-                <option value="">Choose a service...</option>
-                <option value="lead-generation">Lead Generation</option>
-                <option value="admin-support">Admin Support</option>
-                <option value="virtual-assistance">General Virtual Assistance</option>
-                <option value="outreach">Outreach (Cold Email + LinkedIn)</option>
-                <option value="social-media">Social Media Management & Ads</option>
-                <option value="crm-management">CRM Management</option>
-                <option value="automation">Automation & Workflows</option>
-                <option value="other">Other / Multiple Services</option>
+                <option value="" className="bg-primary text-white">Choose a service...</option>
+                <option value="lead-generation" className="bg-primary text-white">Lead Generation</option>
+                <option value="admin-support" className="bg-primary text-white">Admin Support</option>
+                <option value="virtual-assistance" className="bg-primary text-white">General Virtual Assistance</option>
+                <option value="outreach" className="bg-primary text-white">Outreach (Cold Email + LinkedIn)</option>
+                <option value="social-media" className="bg-primary text-white">Social Media Management & Ads</option>
+                <option value="crm-management" className="bg-primary text-white">CRM Management</option>
+                <option value="automation" className="bg-primary text-white">Automation & Workflows</option>
+                <option value="other" className="bg-primary text-white">Other / Multiple Services</option>
               </select>
             </div>
 
@@ -166,25 +172,24 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Describe your needs, timeline, and any specific requirements..."
-                className="w-full px-4 py-3 rounded-lg border-2 border-white/30 bg-white text-dark focus:outline-none focus:border-accent focus:ring-4 focus:ring-accent/15 transition-all resize-vertical"
+                className="w-full px-4 py-4 rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-slate-500 focus:outline-none focus:border-accent focus:ring-4 focus:ring-accent/15 transition-all resize-vertical"
               />
             </div>
 
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-white text-secondary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 hover:-translate-y-1 hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-accent text-white px-8 py-5 rounded-xl text-xl font-bold hover:bg-[#e66a00] hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-xl shadow-accent/20"
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
 
             {submitMessage && (
               <div
-                className={`mt-6 p-4 rounded-lg ${
-                  submitMessage.includes('Thank you')
+                className={`mt-6 p-4 rounded-lg ${submitMessage.includes('Thank you')
                     ? 'bg-green-500/20 border border-green-500/50'
                     : 'bg-red-500/20 border border-red-500/50'
-                }`}
+                  }`}
               >
                 {submitMessage}
               </div>

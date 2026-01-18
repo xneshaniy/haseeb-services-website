@@ -52,7 +52,8 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="bg-light py-20">
+      <section className="bg-primary py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary via-bg-darker to-primary opacity-50 pointer-events-none" />
         <div className="container">
           <h2 className="text-center mb-12">Our Services</h2>
           <ServiceCarousel />
@@ -97,11 +98,11 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {['Clear weekly updates', 'Organized task tracking', 'Fast communication', 'Consistent execution'].map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all text-center border border-primary/5">
-                <div className="w-12 h-12 bg-gradient-to-br from-secondary to-primary rounded-lg flex items-center justify-center text-white mx-auto mb-4">
+              <div key={index} className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-accent/30 hover:-translate-y-1 transition-all text-center backdrop-blur-sm">
+                <div className="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center text-white mx-auto mb-4">
                   <span className="text-2xl font-bold">✓</span>
                 </div>
-                <p className="font-semibold text-primary">{item}</p>
+                <p className="font-semibold text-white">{item}</p>
               </div>
             ))}
           </div>
@@ -109,7 +110,8 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-light py-20">
+      <section className="bg-bg-darker py-20 relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent pointer-events-none" />
         <div className="container">
           <h2 className="text-center mb-4">What Our Clients Say</h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
@@ -128,7 +130,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-secondary to-[#218838] text-white text-center py-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-secondary to-[#1e7e34] text-white text-center py-24 relative overflow-hidden shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)' }} />
         <div className="container relative z-10">
           <h2 className="text-white mb-4">Ready to Scale Your Business?</h2>

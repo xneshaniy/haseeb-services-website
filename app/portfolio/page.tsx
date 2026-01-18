@@ -67,7 +67,12 @@ export default function Portfolio() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-[#003366] text-white text-center py-24 md:py-32 relative overflow-hidden">
+      <section className="text-white text-center py-24 md:py-32 relative overflow-hidden" style={{ background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)' }}>
+        <div className="stars-container">
+          <div className="stars"></div>
+          <div className="stars2"></div>
+          <div className="stars3"></div>
+        </div>
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 30% 50%, rgba(40, 167, 69, 0.1) 0%, transparent 50%)' }} />
         <div className="container relative z-10">
           <h1 className="text-white mb-6">Portfolio</h1>
@@ -78,17 +83,18 @@ export default function Portfolio() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="bg-light py-20">
-        <div className="container">
-          <h2 className="text-center mb-4">Recent Clients & Completed Projects</h2>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            Replace these sample projects with your real clients/projects anytime.
+      <section className="bg-bg-darker py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary via-bg-darker to-primary opacity-50 pointer-events-none" />
+        <div className="container relative z-10">
+          <h2 className="text-center mb-4 text-white">Recent Clients & Completed Projects</h2>
+          <p className="text-center text-slate-400 max-w-2xl mx-auto mb-12">
+            Showcasing our impact across various industries and business functions.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {portfolioItems.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/5"
+                className="bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-accent/30 transition-all duration-500 backdrop-blur-sm group"
               >
                 <div className="h-56 relative bg-gradient-to-br from-primary to-secondary flex items-center justify-center overflow-hidden">
                   {item.image ? (
@@ -105,10 +111,10 @@ export default function Portfolio() {
                   )}
                 </div>
                 <div className="p-6">
-                  <span className="text-secondary font-semibold text-sm block mb-1">{item.client}</span>
-                  <span className="text-gray-500 text-sm block mb-3">{item.type}</span>
-                  <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-                  <p className="text-dark leading-relaxed">{item.description}</p>
+                  <span className="text-accent font-bold text-sm block mb-1 uppercase tracking-wider">{item.client}</span>
+                  <span className="text-slate-400 text-sm block mb-3 font-medium">{item.type}</span>
+                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-accent transition-colors">{item.title}</h3>
+                  <p className="text-slate-200 leading-relaxed text-sm md:text-base">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -117,20 +123,20 @@ export default function Portfolio() {
       </section>
 
       {/* Clients Section */}
-      <section className="py-20">
-        <div className="container">
-          <h2 className="text-center mb-4">Recent Clients</h2>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            Recent clients we've worked with.
+      <section className="py-20 relative overflow-hidden">
+        <div className="container relative z-10">
+          <h2 className="text-center mb-4 text-white">Our Clients</h2>
+          <p className="text-center text-slate-400 max-w-2xl mx-auto mb-12">
+            We are proud to partner with businesses focused on growth and efficiency.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 hover:scale-105 transition-all text-center border border-primary/5"
+                className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-accent/30 hover:scale-105 transition-all text-center backdrop-blur-sm"
               >
-                <div className="font-bold text-primary text-lg mb-2">{client.name}</div>
-                <div className="text-sm text-gray-600 font-semibold">{client.contact}</div>
+                <div className="font-bold text-white text-lg mb-2">{client.name}</div>
+                <div className="text-sm text-slate-400 font-semibold">{client.contact}</div>
               </div>
             ))}
           </div>
@@ -138,7 +144,7 @@ export default function Portfolio() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-secondary to-[#218838] text-white text-center py-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-secondary to-[#1e7e34] text-white text-center py-24 relative overflow-hidden shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)' }} />
         <div className="container relative z-10">
           <h2 className="text-white mb-4">Want Similar Results?</h2>
