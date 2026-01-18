@@ -15,7 +15,12 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-[#003366] text-white text-center py-32 md:py-40 relative overflow-hidden">
+      <section className="text-white text-center py-32 md:py-40 relative overflow-hidden" style={{ background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)' }}>
+        <div className="stars-container">
+          <div className="stars"></div>
+          <div className="stars2"></div>
+          <div className="stars3"></div>
+        </div>
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 30% 50%, rgba(40, 167, 69, 0.1) 0%, transparent 50%)' }} />
         <div className="container relative z-10">
           <div className="relative h-64 md:h-96 mb-8 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
