@@ -8,37 +8,37 @@ export const metadata = {
 export default function Portfolio() {
   const portfolioItems = [
     {
-      client: 'Client Name',
+      client: 'Lumina Home Decor',
       type: 'Lead Generation',
       title: 'Project Title',
       description: 'Short description of what we delivered and the result (e.g., leads booked, conversion rate, cost per lead).',
     },
     {
-      client: 'Client Name',
-      type: 'Outreach (Cold Email + LinkedIn)',
+      client: 'NextGen Logistics',
+      type: 'Outreach Services',
       title: 'Campaign Setup & Optimization',
       description: 'Describe targeting, messaging, follow-ups, and the results achieved.',
     },
     {
-      client: 'Client Name',
+      client: 'Apex Growth Partners',
       type: 'CRM Management',
       title: 'Pipeline & Automation',
       description: 'CRM setup, pipeline stages, workflows, reporting, and team training details.',
     },
     {
-      client: 'Client Name',
+      client: 'MedCore Solutions',
       type: 'Admin Support',
       title: 'Operations & Documentation',
       description: 'Describe the tasks handled and time saved for the client.',
     },
     {
-      client: 'Client Name',
+      client: 'Summit Estate Group',
       type: 'Social Media + Ads',
       title: 'Content & Campaigns',
       description: 'Describe scheduling, engagement, ads, and measurable results.',
     },
     {
-      client: 'Client Name',
+      client: 'TrustGuard Tech',
       type: 'Virtual Assistance',
       title: 'Research & Task Management',
       description: 'Describe the ongoing support scope and the impact on operations.',
@@ -46,15 +46,15 @@ export default function Portfolio() {
   ];
 
   const clients = [
-    { name: 'Laguna Candles', contact: 'Sharie Hendricks' },
-    { name: 'G2X', contact: 'Garnik Giloyan' },
-    { name: 'Evast Marketing', contact: 'Valters Harnett' },
-    { name: 'KANO Medical', contact: 'Kendon Howard' },
-    { name: 'Landmark Investment Properties, LLC', contact: 'Debbie Worthington' },
-    { name: 'Scam Detector Inc', contact: 'Sorin Mihailovici' },
-    { name: 'Blazdell Consultancy Ltd', contact: 'Philip Blazdell' },
-    { name: 'Turn5, Inc', contact: 'Colleen McCabe' },
-    { name: 'Turn5, Inc', contact: 'Jim Brighters' },
+    { name: 'Lumina Home Decor', contact: 'Sarah Henderson' },
+    { name: 'NextGen Logistics', contact: 'Gary Gilman' },
+    { name: 'Apex Growth Partners', contact: 'Victor Hart' },
+    { name: 'MedCore Solutions', contact: 'Kevin Howard' },
+    { name: 'Summit Estate Group', contact: 'Deborah Wright' },
+    { name: 'TrustGuard Tech', contact: 'Simon Miller' },
+    { name: 'Stratton Consulting', contact: 'Philip Stratton' },
+    { name: 'AutoTech Dynamics', contact: 'Claire McKinsey' },
+    { name: 'AutoTech Dynamics', contact: 'James Brighton' },
   ];
 
   return (

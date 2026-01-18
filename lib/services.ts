@@ -113,7 +113,7 @@ export const services: Service[] = [
   },
   {
     slug: 'outreach-services',
-    title: 'Outreach Services (Social + Cold Outreach)',
+    title: 'Outreach Services',
     shortDescription: 'We manage cold email campaigns and LinkedIn outreach to connect with prospects, follow up with leads, and build strong business relationships.',
     fullDescription: 'Our outreach services combine cold email campaigns and LinkedIn strategies to connect with prospects, nurture leads, and build meaningful business relationships. We craft personalized messages, manage follow-up sequences, and track engagement to maximize response rates and conversions.',
     icon: 'mail',

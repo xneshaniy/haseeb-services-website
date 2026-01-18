@@ -74,7 +74,7 @@ export default function About() {
 
             <div className="bg-gradient-to-br from-primary/5 to-secondary/10 p-8 rounded-xl border border-secondary/20 hover:shadow-lg hover:-translate-y-1 transition-all">
               <h3 className="mb-6">What We Can Do For You</h3>
-              
+
               <div className="space-y-6">
                 <div>
                   <h4 className="font-semibold text-primary mb-2">Lead Generation</h4>
@@ -98,7 +98,7 @@ export default function About() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-primary mb-2">Outreach Services (Social + Cold Outreach)</h4>
+                  <h4 className="font-semibold text-primary mb-2">Outreach Services</h4>
                   <p className="text-sm text-dark">
                     We manage cold email campaigns and LinkedIn outreach to connect with prospects, follow up with leads, and build strong business relationships.
                   </p>

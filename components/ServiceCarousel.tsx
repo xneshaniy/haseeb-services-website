@@ -35,7 +35,7 @@ const services: Service[] = [
   },
   {
     icon: <MailIcon className="w-8 h-8" />,
-    title: 'Outreach Services (Social + Cold Outreach)',
+    title: 'Outreach Services',
     description: 'We manage cold email campaigns and LinkedIn outreach to connect with prospects, follow up with leads, and build strong business relationships.',
   },
   {
@@ -61,7 +61,7 @@ export default function ServiceCarousel() {
 
   useEffect(() => {
     if (!isAutoPlaying) return;
-    
+
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % services.length);
     }, 5000);
@@ -144,11 +144,10 @@ export default function ServiceCarousel() {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`h-3 rounded-full transition-all ${
-              index === currentIndex
+            className={`h-3 rounded-full transition-all ${index === currentIndex
                 ? 'w-8 bg-accent'
                 : 'w-3 bg-gray-300 hover:bg-gray-400'
-            }`}
+              }`}
             aria-label={`Go to service ${index + 1}`}
           />
         ))}
