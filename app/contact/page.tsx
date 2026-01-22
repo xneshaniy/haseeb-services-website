@@ -5,7 +5,7 @@ import {
   MailIcon,
   PhoneIcon,
   ChatIcon,
-  InstagramIcon,
+
   TwitterIcon,
   FacebookIcon,
   LinkedInIcon,
@@ -187,8 +187,8 @@ export default function Contact() {
             {submitMessage && (
               <div
                 className={`mt-6 p-4 rounded-lg ${submitMessage.includes('Thank you')
-                    ? 'bg-green-500/20 border border-green-500/50'
-                    : 'bg-red-500/20 border border-red-500/50'
+                  ? 'bg-green-500/20 border border-green-500/50'
+                  : 'bg-red-500/20 border border-red-500/50'
                   }`}
               >
                 {submitMessage}
@@ -225,15 +225,7 @@ export default function Contact() {
             </div>
 
             <div className="flex justify-center gap-4 mt-8 flex-wrap">
-              <a
-                href="https://instagram.com/growthleder"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent hover:scale-110 hover:-translate-y-1 transition-all border border-white/20"
-              >
-                <InstagramIcon className="w-6 h-6" />
-              </a>
+
               <a
                 href="https://twitter.com/growthleder"
                 target="_blank"

@@ -3,7 +3,7 @@ import {
   MailIcon,
   PhoneIcon,
   ChatIcon,
-  InstagramIcon,
+
   TwitterIcon,
   FacebookIcon,
   LinkedInIcon,
@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="container">
         <p className="mb-2">© {new Date().getFullYear()} Growth Leder. All rights reserved.</p>
         <p className="mb-6 text-gray-300">Accounting • Lead Generation • SEO • LinkedIn & Web Outreach</p>
-        
+
         <div className="flex flex-col items-center gap-4 my-6">
           <div className="flex items-center gap-2">
             <MailIcon className="w-5 h-5" />
@@ -45,15 +45,7 @@ export default function Footer() {
         </div>
 
         <div className="flex justify-center gap-4 mt-8 flex-wrap">
-          <a
-            href="https://instagram.com/growthleder"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent hover:scale-110 hover:-translate-y-1 transition-all border border-white/20"
-          >
-            <InstagramIcon className="w-6 h-6" />
-          </a>
+
           <a
             href="https://twitter.com/growthleder"
             target="_blank"

@@ -17,7 +17,7 @@ export function OrganizationSchema() {
       email: 'admin@growthleder.com',
     },
     sameAs: [
-      'https://instagram.com/growthleder',
+
       'https://twitter.com/growthleder',
       'https://facebook.com/growthleder',
       'https://linkedin.com/company/growthleder',
