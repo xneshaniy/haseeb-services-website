@@ -44,3 +44,28 @@ desktop.ini
 *.tmp
 *.temp
 .cache/
+
+# Legacy static HTML files (old site, replaced by Next.js)
+index.html
+about.html
+contact.html
+services.html
+portfolio.html
+automation.html
+testimonials.html
+privacy.html
+terms.html
+service-*.html
+
+# Legacy static assets (old site)
+style.css
+carousel.css
+script.js
+js/
+
+# Temporary/development files
+git
+k
+create_stars.py
+stars*.txt
+stars.css

@@ -42,12 +42,7 @@ export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="text-white text-center py-24 md:py-32 relative overflow-hidden" style={{ background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)' }}>
-        <div className="stars-container">
-          <div className="stars"></div>
-          <div className="stars2"></div>
-          <div className="stars3"></div>
-        </div>
+      <section className="bg-gradient-to-br from-primary to-[#003366] text-white text-center py-24 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 30% 50%, rgba(40, 167, 69, 0.1) 0%, transparent 50%)' }} />
         <div className="container relative z-10">
           <Breadcrumbs items={breadcrumbs} />
@@ -59,11 +54,10 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-primary via-bg-darker to-primary opacity-50 pointer-events-none" />
-        <div className="container relative z-10">
-          <h2 className="text-center mb-4 text-white">What We Can Do For You</h2>
-          <p className="text-center text-slate-400 max-w-2xl mx-auto mb-12">
+      <section className="py-20">
+        <div className="container">
+          <h2 className="text-center mb-4">What We Can Do For You</h2>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
             Explore our comprehensive range of services designed to help your business grow, scale, and operate more efficiently.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -71,15 +65,15 @@ export default function Services() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-accent/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group backdrop-blur-sm"
+                className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/5 group"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center text-white mb-6 shadow-md group-hover:scale-110 transition-transform">
+                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center text-white mb-6 shadow-md group-hover:scale-110 transition-transform">
                   {getIcon(service.icon)}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">
+                <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-slate-300 leading-relaxed mb-4">{service.shortDescription}</p>
+                <p className="text-dark leading-relaxed mb-4">{service.shortDescription}</p>
                 <span className="text-accent font-semibold group-hover:underline">
                   Learn More →
                 </span>
@@ -90,7 +84,7 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-secondary to-[#1e7e34] text-white text-center py-24 relative overflow-hidden shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">
+      <section className="bg-gradient-to-br from-secondary to-[#218838] text-white text-center py-20 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)' }} />
         <div className="container relative z-10">
           <h2 className="text-white mb-4">Want Help With Any of These?</h2>

@@ -26,8 +26,8 @@ export default function Header() {
     { href: '/', label: 'Home' },
     { href: '/services', label: 'Services' },
     { href: '/portfolio', label: 'Portfolio' },
+    { href: '/testimonials', label: 'Testimonials' },
     { href: '/about', label: 'About Us' },
-    { href: '/contact', label: 'Contact' },
   ];
 
   return (
@@ -35,13 +35,13 @@ export default function Header() {
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
           ? 'bg-primary/95 backdrop-blur-md shadow-lg py-3'
-          : 'bg-transparent py-4'
+          : 'bg-transparent py-6'
           }`}
       >
         <div className="container">
           <div className="flex justify-between items-center">
-            <Link href="/" className="flex items-center gap-3 text-white text-xl md:text-2xl font-bold hover:scale-105 transition-transform">
-              <Image src="/logo-white.svg" alt="Growth Leder Logo" width={45} height={45} />
+            <Link href="/" className="flex items-center gap-3 text-white text-2xl md:text-3xl font-bold hover:scale-105 transition-transform">
+              <Image src="/logo-white.svg" alt="Growth Leder Logo" width={60} height={60} className="w-12 h-12 md:w-16 md:h-16" />
               Growth Leder
             </Link>
             <button

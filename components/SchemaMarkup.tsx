@@ -12,7 +12,7 @@ export function OrganizationSchema() {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+92-313-7123964',
+      telephone: '+92-304-7775545',
       contactType: 'Customer Service',
       email: 'admin@growthleder.com',
     },

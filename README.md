@@ -1,16 +1,18 @@
-<<<<<<< HEAD
 # Growth Leder - Services Website
 
-A modern, responsive website for Growth Leder services built with static HTML, CSS, and JavaScript.
+A modern, responsive Next.js website for Growth Leder services, built with React, TypeScript, and Tailwind CSS.
 
 ## Features
 
-- ✅ Fully static website (no build process required)
+- ✅ Next.js 14 with App Router
+- ✅ TypeScript for type safety
+- ✅ Tailwind CSS for styling
+- ✅ Fully static export (no server required)
 - ✅ Modern animated testimonial slider
 - ✅ Service carousel on homepage
 - ✅ Individual service detail pages with breadcrumbs
 - ✅ Responsive design for all devices
-- ✅ SEO-friendly structure
+- ✅ SEO-friendly with schema markup
 - ✅ Fast loading times
 
 ## Services Offered
@@ -24,46 +26,96 @@ A modern, responsive website for Growth Leder services built with static HTML, C
 7. Automation & Workflows
 8. Accounting & Bookkeeping
 
-## File Structure
+## Tech Stack
 
-```
-├── index.html                 # Homepage
-├── services.html              # Services listing page
-├── service-*.html            # Individual service detail pages
-├── about.html                # About page
-├── contact.html              # Contact page
-├── portfolio.html            # Portfolio page
-├── style.css                 # Main stylesheet
-├── carousel.css              # Carousel and testimonial styles
-├── script.js                 # Main JavaScript functionality
-├── js/
-│   ├── data.js              # Services and testimonials data
-│   ├── carousel.js          # Service carousel functionality
-│   ├── testimonials.js     # Testimonial slider
-│   ├── services.js         # Services page rendering
-│   └── service-detail.js   # Service detail page rendering
-└── public/
-    ├── favicon.svg
-    ├── logo-white.svg
-    ├── home1.jpg
-    └── laptop.png
-```
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Deployment**: Static export to StackCP
 
 ## Getting Started
 
-1. Clone or download this repository
-2. Open `index.html` in a web browser
-3. That's it! No build process needed.
+### Prerequisites
+
+- Node.js 18+ and npm
+- Git (for version control)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd haseeb-services-website
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This generates a static site in the `out` folder, ready for deployment.
+
+## Project Structure
+
+```
+├── app/                    # Next.js App Router pages
+│   ├── page.tsx           # Homepage
+│   ├── about/             # About page
+│   ├── contact/           # Contact page
+│   ├── services/          # Services pages
+│   └── globals.css        # Global styles
+├── components/            # React components
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── ServiceCarousel.tsx
+│   └── Testimonials.tsx
+├── lib/                   # Data and utilities
+│   ├── services.ts        # Services data
+│   └── testimonials.ts    # Testimonials data
+├── public/                # Static assets
+└── out/                   # Build output (generated)
+```
 
 ## Deployment
 
-This is a static website that can be deployed to:
+### StackCP Deployment
+
+1. Build the site:
+   ```powershell
+   .\build-for-stackcp.ps1
+   ```
+
+2. Upload contents of `out` folder to StackCP `public_html`
+
+See [STACKCP_DEPLOYMENT.md](./STACKCP_DEPLOYMENT.md) for detailed instructions.
+
+### Other Platforms
+
+This static site can be deployed to:
 - GitHub Pages
 - Netlify
 - Vercel
 - Any static hosting service
 
-Simply upload all files to your hosting provider.
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build static site
+- `npm run start` - Start production server (not used for static export)
+- `npm run lint` - Run ESLint
 
 ## Browser Support
 
@@ -74,7 +126,4 @@ Simply upload all files to your hosting provider.
 
 ## License
 
-© 2026 Growth Leder. All rights reserved.
-=======
-# haseeb-services-website
->>>>>>> 2ffb04efacf2374be66d75b7b41579781f1c3a83
+© {new Date().getFullYear()} Growth Leder. All rights reserved.

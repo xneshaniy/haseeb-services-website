@@ -23,24 +23,13 @@ export default function Home() {
         </div>
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(circle at 30% 50%, rgba(40, 167, 69, 0.1) 0%, transparent 50%)' }} />
         <div className="container relative z-10">
-          <div className="relative h-64 md:h-96 mb-8 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
-            <Image
-              src="/home1.jpg"
-              alt="Professional business growth services - Lead generation services, virtual assistant support, and CRM automation for growing businesses"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-primary/40 flex items-center justify-center">
-              <div className="text-center p-8">
-                <h1 className="text-white mb-6 text-4xl md:text-5xl lg:text-6xl font-bold">
-                  Grow Your Business with Systems That Work
-                </h1>
-                <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-95">
-                  Lead generation, outreach, CRM management, and virtual support — delivered with consistency and measurable results.
-                </p>
-              </div>
-            </div>
+          <div className="max-w-4xl mx-auto mb-10">
+            <h1 className="text-white mb-6 text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight">
+              Grow Your Business with Systems That Work
+            </h1>
+            <p className="text-lg md:text-2xl max-w-3xl mx-auto opacity-90 text-slate-200 leading-relaxed">
+              Lead generation, outreach, CRM management, and virtual support — delivered with consistency and measurable results.
+            </p>
           </div>
           <Link
             href="/contact"

@@ -4,7 +4,7 @@
 
 ### 1. Content Updates
 - ✅ All "About Me" replaced with "About Us" throughout the website
-- ✅ All first-person references (I, me, my) converted to company language (we, us, our)
+- ✅ All first-person singular references (I, me, my) converted to team-based company language (we, us, our) throughout the website content.
 - ✅ About Us section updated with new professional content
 
 ### 2. Images & Visuals

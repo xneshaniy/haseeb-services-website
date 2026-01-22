@@ -207,19 +207,19 @@ export default function Contact() {
               </div>
               <div className="flex items-center gap-3">
                 <PhoneIcon className="w-6 h-6" />
-                <a href="tel:+923137123964" className="text-white hover:text-accent transition-colors">
-                  +92 313 7123964
+                <a href="tel:+923047775545" className="text-white hover:text-accent transition-colors">
+                  +92 3047775545
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <ChatIcon className="w-6 h-6" />
                 <a
-                  href="https://wa.me/923137123964"
+                  href="https://wa.me/923047775545"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-accent transition-colors"
                 >
-                  WhatsApp: +92 313 7123964
+                  WhatsApp: +92 3047775545
                 </a>
               </div>
             </div>
