@@ -25,7 +25,7 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto mb-10">
             <h1 className="text-white mb-6 text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight">
-              Grow Your Business with Systems That Work
+              We help businesses grow smarter and faster 🚀
             </h1>
             <p className="text-lg md:text-2xl max-w-3xl mx-auto opacity-90 text-slate-200 leading-relaxed">
               Lead generation, outreach, CRM management, and virtual support — delivered with consistency and measurable results.

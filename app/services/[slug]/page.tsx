@@ -137,10 +137,6 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                   alt={`${service.sampleProject.title} - ${service.title} project example showcasing lead generation services and virtual assistant support`}
                   fill
                   className="object-cover"
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    target.style.display = 'none';
-                  }}
                 />
                 <div className="absolute inset-0 bg-primary/20 flex items-center justify-center">
                   <div className="text-center text-white p-8">
