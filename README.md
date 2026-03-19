@@ -72,7 +72,7 @@ This generates a static site in the `out` folder, ready for deployment.
 
 ## Project Structure
 
-```
+``` 
 ├── app/                    # Next.js App Router pages
 │   ├── page.tsx           # Homepage
 │   ├── about/             # About page
